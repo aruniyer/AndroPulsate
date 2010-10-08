@@ -45,7 +45,7 @@ public class AndroPulsate extends Activity {
       toneGenerator = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
     }
 
-    List<Center> centers = new LinkedList<Center>();
+    private List<Center> centers = new LinkedList<Center>();
     
     protected void onDraw(Canvas canvas) {
       mPaint.setColor(Color.BLACK);
@@ -167,6 +167,7 @@ public class AndroPulsate extends Activity {
     }
     
     private static class Center {
+      
       int x;
       int y;
       int radius;
